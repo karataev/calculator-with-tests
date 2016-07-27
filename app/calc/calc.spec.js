@@ -20,4 +20,11 @@ describe('Calc component', function() {
     expect($ctrl.b).toEqual(1);
     expect($ctrl.result).toBeUndefined();
   })
+
+  it('should add two numbers correctly', function() {
+    $ctrl.a = '10';
+    $ctrl.b = '20';
+    $ctrl.add();
+    expect($ctrl.result).toBe(30);
+  })
 })
