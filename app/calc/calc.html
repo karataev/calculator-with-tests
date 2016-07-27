@@ -2,12 +2,15 @@
 <form>
   <div>
     <input type="text" ng-model="$ctrl.a">
-    <span>+</span>
+    <select
+        ng-options="option.title for option in $ctrl.operations"
+        ng-model="$ctrl.selectedOperation"
+    ></select>
     <input type="text" ng-model="$ctrl.b">
     <span>=</span>
     <span>{{$ctrl.result}}</span>
   </div>
   <div>
-    <button ng-click="$ctrl.add()">Calculate</button>
+    <button ng-click="$ctrl.calc()">Calculate</button>
   </div>
 </form>
