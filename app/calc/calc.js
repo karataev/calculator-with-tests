@@ -7,7 +7,7 @@ calcApp
       vm.b = 1;
       vm.result = undefined;
       
-      vm.calc = function() {
+      vm.add = function() {
         vm.result = Number(vm.a) + Number(vm.b);
       }
     }],

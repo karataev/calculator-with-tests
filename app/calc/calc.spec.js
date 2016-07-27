@@ -15,8 +15,9 @@ describe('Calc component', function() {
     expect(scope.$ctrl).toBe(controller);
   });
 
-  it('a and b should have defaults', function() {
+  it('variables should have defaults', function() {
     expect($ctrl.a).toEqual(1);
     expect($ctrl.b).toEqual(1);
+    expect($ctrl.result).toBeUndefined();
   })
 })
