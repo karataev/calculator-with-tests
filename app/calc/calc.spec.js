@@ -29,5 +29,12 @@ describe('Calc component', function() {
     expect($ctrl.result).toBe(30);
   });
 
+  it('should subtract two numbers correctly', function() {
+    $ctrl.a = '99';
+    $ctrl.b = '19';
+    $ctrl.selectOperation($ctrl.operations[1]);
+    $ctrl.calc();
+    expect($ctrl.result).toBe(80);
+  })
 
 })
