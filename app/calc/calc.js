@@ -16,6 +16,10 @@ calcApp
       ];
       vm.selectedOperation = vm.operations[0];
       
+      vm.selectOperation = function(operation) {
+        vm.selectedOperation = operation;
+      };
+      
       vm.calc = function() {
         var aNum = Number(vm.a);
         var bNum = Number(vm.b);

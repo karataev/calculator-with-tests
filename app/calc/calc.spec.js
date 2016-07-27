@@ -19,12 +19,15 @@ describe('Calc component', function() {
     expect($ctrl.a).toEqual(1);
     expect($ctrl.b).toEqual(1);
     expect($ctrl.result).toBeUndefined();
-  })
+  });
 
   it('should add two numbers correctly', function() {
     $ctrl.a = '10';
     $ctrl.b = '20';
-    $ctrl.add();
+    $ctrl.selectOperation($ctrl.operations[0]);
+    $ctrl.calc();
     expect($ctrl.result).toBe(30);
-  })
+  });
+
+
 })
