@@ -17,7 +17,17 @@ module.exports = function(config) {
 
     plugins: [
       'karma-chrome-launcher',
-      'karma-jasmine'
-    ]
+      'karma-jasmine',
+      'karma-junit-reporter'
+    ],
+
+    reporters: ['progress', 'junit'],
+
+    junitReporter: {
+      outputDir: 'testReports',
+      outputFile: 'unit.xml',
+      suite: 'unit'
+    }
+
   })
 }
