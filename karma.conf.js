@@ -9,6 +9,10 @@ module.exports = function(config) {
       'app/**/*.js'
     ],
 
+    exclude: [
+      'app/vendor/**/*.js'
+    ],
+
     autoWatch: true,
 
     frameworks: ['jasmine'],
