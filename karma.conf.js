@@ -21,7 +21,8 @@ module.exports = function(config) {
       'karma-junit-reporter'
     ],
 
-    reporters: ['progress', 'junit'],
+    // reporters: ['progress', 'junit'],
+    reporters: ['dots'],
 
     junitReporter: {
       outputDir: 'testReports',
